@@ -8,6 +8,8 @@ import {
   Text,
   PageBreaker,
   Grid,
+  Stack,
+  Columns,
 } from './apiComponents'
 
 export default class SimplePDF extends React.Component {
@@ -26,10 +28,16 @@ export default class SimplePDF extends React.Component {
       <PDF ref="pdf">
         <Grid widths={['*']}>
           <Row>
-            <Text
-              text="Row 1"
-              bold
-            />
+            <Stack>
+              <Text
+                text="Row 1"
+                bold
+              />
+              <Text
+                text="Stacked text"
+                bold
+              />
+            </Stack>
           </Row>
 
           <Row>
@@ -42,7 +50,12 @@ export default class SimplePDF extends React.Component {
         <PageBreaker />
 
         <Grid>
-          <Row><Text text="Grid 2"/></Row>
+          <Row>
+            <Columns>
+              <Text text="Grid 2"/>
+              <Text text="Column text"/>
+            </Columns>
+          </Row>
         </Grid>
       </PDF>
     )
