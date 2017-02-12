@@ -61,7 +61,7 @@ export default class SimplePDF extends React.Component {
 ## Why?
 pdfMake is a great tool for generating PDFs in JS. Though a JSON structure is very useful,
 it can get really messy when the PDF structures grows bigger and gets more complex. And that's
-where React comes in to help, the easy JSX structure is great to abstract the most complexes
+where React comes in to help, the easy JSX structure is great to abstract the most complex
 structures into the so called and amazing components.
 
 TODO
