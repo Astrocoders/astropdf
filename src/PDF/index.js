@@ -6,6 +6,7 @@ import {
   PDF,
   Row,
   Text,
+  PageBreaker,
   Grid,
 } from './apiComponents'
 
@@ -36,6 +37,12 @@ export default class SimplePDF extends React.Component {
               text="Row 2"
             />
           </Row>
+        </Grid>
+
+        <PageBreaker />
+
+        <Grid>
+          <Row><Text text="Grid 2"/></Row>
         </Grid>
       </PDF>
     )
