@@ -29,21 +29,15 @@ export default class SimplePDF extends React.Component {
         <Grid widths={['*']}>
           <Row>
             <Stack>
-              <Text
-                text="Row 1"
-                bold
-              />
-              <Text
-                text="Stacked text"
-                bold
-              />
+              <Text bold>
+                Row 1
+              </Text>
+              <Text>Stacked text</Text>
             </Stack>
           </Row>
 
           <Row>
-            <Text
-              text="Row 2"
-            />
+            <Text>Row 2</Text>
           </Row>
         </Grid>
 
@@ -52,8 +46,8 @@ export default class SimplePDF extends React.Component {
         <Grid>
           <Row>
             <Columns>
-              <Text text="Grid 2"/>
-              <Text text="Column text"/>
+              <Text>Grid 2</Text>
+              <Text>Column text</Text>
             </Columns>
           </Row>
         </Grid>
