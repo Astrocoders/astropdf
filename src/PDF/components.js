@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-export const Text = ({ text, ...props}) => ({ ...props, text })
+export const Text = (children, props = {}) => ({ ...props, text: children })
 export const BoldText = ({ text, ...props}) => ({ ...props, bold: true, text })
 export const Stack = (children, props = {}) => ({ ...props, stack: children })
 export const Grid = (children, props = {}) => ({
